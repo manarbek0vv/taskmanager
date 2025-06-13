@@ -1,0 +1,76 @@
+# Node modules
+client/node_modules/
+node_modules/
+server/node_modules/
+
+# Output builds
+build/
+client/dist-ssr/
+client/dist/
+dist/
+server/build/
+server/dist/
+
+# Environment variables
+.env
+.env.*
+client/.env
+client/.env.*
+server/.env
+server/.env.*
+
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+prisma/migrations/
+server/generated/prisma/
+server/src/generated/
+
+# Uploads
+server/uploads/
+uploads/
+
+# Logs
+*.log
+lerna-debug.log*
+logs/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tests and coverage
+server/.nyc_output/
+server/coverage/
+
+# Temporary files
+*.pid
+*.pid.lock
+*.seed
+.temp/
+.tmp/
+pids/
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# IDE and OS files
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.launch
+*.njsproj
+*.ntvs*
+*.sln
+*.sublime-workspace
+*.suo
+*.sw?
+.DS_Store
+.c9/
+.classpath
+.idea/
+.project
+.settings/
+.vscode/
+Thumbs.db

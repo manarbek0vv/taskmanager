@@ -1,0 +1,8 @@
+model CheckItem {
+    id        String  @id @default(uuid())
+    taskId    String  @map("task_id")
+    title     String
+    completed Boolean @default(false)
+
+    task Task @relation(fields: [taskId], references: [id])
+}

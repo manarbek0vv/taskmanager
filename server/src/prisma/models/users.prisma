@@ -1,0 +1,14 @@
+model User {
+    id       String  @id @default(uuid())
+    fullName String  @map("full_name")
+    email    String  @unique
+    password String
+    avatar   String?
+
+    roomId String
+
+    room  Room   @relation(fields: [roomId], references: [id])
+    token Token?
+    tasks Task[]
+    role  Role   @default(USER)
+}

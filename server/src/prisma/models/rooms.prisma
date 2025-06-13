@@ -1,0 +1,8 @@
+model Room {
+    id        String @id @default(uuid())
+    exclusive String @unique
+    ordinary  String @unique
+
+    members User[]
+    tasks   Task[]
+}

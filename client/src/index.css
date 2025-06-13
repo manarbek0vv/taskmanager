@@ -1,0 +1,99 @@
+@font-face {
+    font-family: PoppinsExtrabold;
+    src: url('./fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url('./fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url('./fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url('./fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: PoppinsRegular;
+    src: url('./fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url('./fonts/Poppins-Light.ttf');
+}
+
+.animate-select {
+    animation: smooth-appearing 300ms ease-in-out;
+}
+
+@keyframes smooth-appearing {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: auto;
+    }
+
+    25% {
+        transform: translateY(3px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(1px);
+    }
+}
+
+.notification-enter {
+    transform: translateY(-100%) scale(0.3);
+    opacity: 0;
+}
+
+.notification-enter-active {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    transition: all 300ms;
+}
+
+.notification-enter-done {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.notification-exit {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.notification-exit-active {
+    transform: translateY(-100%) scale(0.3);
+    opacity: 1;
+    transition: all 300ms;
+}
+
+.notification-exit-done {
+    transform: translateY(-100%) scale(0.3);
+    opacity: 0;
+}
+
+#modal {
+    position: relative;
+}
+
+@import 'tailwindcss';
