@@ -2,11 +2,12 @@ import { Dispatch, FC, useState } from "react";
 import { createPortal } from "react-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { Priority } from "../definitions/interfaces";
+import { TaskDto } from "../dto/index.dto";
 
 interface SelectProps {
     options: Array<{ name: string, value: Priority }>;
     value: Priority;
-    setData: Dispatch<React.SetStateAction<CreateTaskDto>>
+    setData: Dispatch<React.SetStateAction<TaskDto>>
 }
 
 const Select: FC<SelectProps> = ({ options, value, setData }) => {

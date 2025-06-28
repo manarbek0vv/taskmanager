@@ -1,11 +1,11 @@
 import { ChangeEventHandler, Dispatch, FC, useRef } from "react"
-import { CreateTaskDto } from "../dto/index.dto";
+import { TaskDto } from "../dto/index.dto";
 
 interface LabelAreaProps {
     title: string;
     placeholder: string;
     value: string;
-    onChange: Dispatch<React.SetStateAction<CreateTaskDto>>
+    onChange: Dispatch<React.SetStateAction<TaskDto>>
 }
 
 const LabelArea: FC<LabelAreaProps> = ({ title, placeholder, value, onChange: setData }) => {

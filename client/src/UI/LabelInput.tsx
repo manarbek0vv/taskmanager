@@ -1,11 +1,11 @@
 import { Dispatch, FC } from "react"
-import { CreateTaskDto } from "../dto/index.dto";
+import { TaskDto } from "../dto/index.dto";
 
 interface LabelProps {
     title: string;
     placeholder: string;
     value: string;
-    onChange: Dispatch<React.SetStateAction<CreateTaskDto>>
+    onChange: Dispatch<React.SetStateAction<TaskDto>>
 }
 
 const Label: FC<LabelProps> = ({ title, placeholder, value, onChange }) => {

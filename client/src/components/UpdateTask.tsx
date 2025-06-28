@@ -67,7 +67,7 @@ const UpdateTask = () => {
                         <LabelArea value={data.description} onChange={setData} title="Description" placeholder="Description..." />
 
                         <div className={`w-full flex gap-4 items-center max-[850px]:flex-col max-[850px]:justify-start`}>
-                            <div className={`flex flex-col w-full gap-3`}>
+                            <div className={`flex flex-col max-[850px]:w-full gap-3`}>
                                 <span className={`text-[14px] font-['PoppinsMedium']`}>Priority</span>
                                 <Select
                                     value={data.priority}
@@ -80,7 +80,7 @@ const UpdateTask = () => {
                                 />
                             </div>
 
-                            <div className={`w-full flex flex-col gap-3`}>
+                            <div className={`max-[850px]:w-full flex flex-col gap-3`}>
                                 <span className={`text-[14px] font-['PoppinsMedium']`}>Due Date</span>
                                 <DatePicker value={data.dueDate} setData={setData} />
                             </div>
