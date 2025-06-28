@@ -13,9 +13,9 @@ const TaskHeaderItem: FC<TaskHeaderItemProps> = ({ item, pathname }) => {
     const countColor = pathname === item.path ? 'bg-blue-500 text-zinc-100' : 'bg-gray-200 text-gray-500'
 
     return (
-        <Link to={item.path} className={`${wrapperColor} cursor-pointer text-[13px] font-['PoppinsMedium'] items-center flex gap-2 px-4 py-1 border-b-3`}>
+        <Link to={item.path} className={`${wrapperColor} max-[768px]:text-[8px] max-[768px]:px-2 cursor-pointer text-[13px] font-['PoppinsMedium'] items-center flex gap-2 px-4 py-1 border-b-3`}>
             <span className={`block ${textColor}`}>{item.title}</span>
-            <span className={`${countColor} block px-[10px] py-0.5 rounded-[45%]`}>{item.count}</span>
+            <span className={`${countColor} max-[768px]:px-[6px] block px-[10px] py-0.5 rounded-[45%]`}>{item.count}</span>
         </Link>
     )
 }

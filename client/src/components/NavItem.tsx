@@ -18,10 +18,10 @@ const NavItem: FC<NavItemProps> = ({ children, Icon, location, path }) => {
     }
 
     return (
-        <Link onClick={onClick} to={path} className={`${location === path ? 'bg-blue-50 border-r-3' : ''} border-0 border-blue-500 items-center p-4 w-full flex gap-2`}>
+        <Link onClick={onClick} to={path} className={`${location === path ? 'bg-blue-50 border-r-3' : ''} border-0 border-blue-500 items-center p-4 w-full flex gap-2 max-[1050px]:w-auto`}>
             <Icon className={`${location === path ? 'fill-blue-500' : ''} size-[22px]`} />
 
-            <p className={`${location === path ? 'text-blue-500' : ''} text-md font-['PoppinsMedium']`}>{children}</p>
+            <p className={`${location === path ? 'text-blue-500' : ''} text-md font-['PoppinsMedium'] max-[1050px]:hidden`}>{children}</p>
         </Link>
     )
 }

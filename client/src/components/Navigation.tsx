@@ -26,7 +26,7 @@ const Navigation = () => {
     const { auth } = useContext(Context);
 
     return (
-        <nav className={`mt-4 w-full flex flex-col gap-0`}>
+        <nav className={`mt-4 w-full flex flex-col gap-0 max-[1050px]:w-auto`}>
             {
                 auth.user.role === Role.ADMIN ?
                     NavigationItemsAdmin.map(item =>

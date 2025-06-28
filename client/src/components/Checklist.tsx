@@ -49,7 +49,7 @@ const Checklist: FC<CheckListProps> = ({ data, setData }) => {
                 )
             }
 
-            <div className={`flex w-full gap-4`}>
+            <div className={`flex w-full gap-4 max-[500px]:flex-col`}>
                 <input value={value} onChange={(e) => setValue(e.target.value)} className={`grow-1 transition-colors focus:border-gray-400 text-[16px] outline-0 rounded-[5px] px-3 py-2 bg-gray-50 border-1 border-zinc-200`} placeholder="Enter Task" />
 
                 <button onClick={addCheckItem} className={`text-gray-800 hover:bg-gray-300 cursor-pointer shrink-0 grow-0 font-['PoppinsMedium'] transition-colors focus:border-gray-300 text-[16px] outline-0 rounded-[5px] px-4 py-2 bg-gray-100 border-1 border-zinc-200`}>+ Add</button>

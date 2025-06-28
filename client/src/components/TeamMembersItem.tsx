@@ -37,16 +37,16 @@ const TeamMembersItem: FC<TeamMembersItemProps> = ({ user }) => {
 
             <div className={`flex items-center gap-2`}>
                 <div className={`px-3 py-2 rounded-md bg-gray-100 grow-1 flex flex-col gap-0 font-['PoppinsMedium']`}>
-                    <span className={`text-[12px] text-purple-800`}>{pendingTasksCount}</span>
-                    <span className={`whitespace-nowrap text-[12px] text-purple-800`}>Pending</span>
+                    <span className={`max-[600px]:text-[10px] text-[12px] text-purple-800`}>{pendingTasksCount}</span>
+                    <span className={`whitespace-nowrap max-[600px]:text-[10px] text-[12px] text-purple-800`}>Pending</span>
                 </div>
                 <div className={`px-3 py-2 rounded-md bg-gray-100 grow-1 flex flex-col gap-0 font-['PoppinsMedium']`}>
-                    <span className={`text-[12px] text-sky-600`}>{inProgressTasksCount}</span>
-                    <span className={`whitespace-nowrap text-[12px] text-sky-600`}>In Progress</span>
+                    <span className={`max-[600px]:text-[10px] text-[12px] text-sky-600`}>{inProgressTasksCount}</span>
+                    <span className={`whitespace-nowrap max-[600px]:text-[10px] text-[12px] text-sky-600`}>In Progress</span>
                 </div>
                 <div className={`px-3 py-2 rounded-md bg-gray-100 grow-1 flex flex-col gap-0 font-['PoppinsMedium']`}>
-                    <span className={`text-[12px] text-green-600`}>{completedTasksCount}</span>
-                    <span className={`whitespace-nowrap text-[12px] text-green-600`}>Completed</span>
+                    <span className={`max-[600px]:text-[10px] text-[12px] text-green-600`}>{completedTasksCount}</span>
+                    <span className={`whitespace-nowrap max-[600px]:text-[10px] text-[12px] text-green-600`}>Completed</span>
                 </div>
             </div>
         </div>

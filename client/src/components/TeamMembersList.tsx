@@ -14,7 +14,7 @@ const TeamMembersList = () => {
     }, [])
 
     return (
-        <div className={`overflow-x-hidden [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-scrollbar-width]:hidden overflow-y-auto gap-4 auto-rows-auto grid grid-cols-3 w-full`}>
+        <div className={`max-[1250px]:grid-cols-2 max-[700px]:grid-cols-1 overflow-x-hidden [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-scrollbar-width]:hidden overflow-y-auto gap-4 auto-rows-auto grid grid-cols-3 w-full`}>
             {users.map(user =>
                 <TeamMembersItem user={user} key={user.id} />
             )}

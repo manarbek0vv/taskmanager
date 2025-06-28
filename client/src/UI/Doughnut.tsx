@@ -56,7 +56,7 @@ const DoughnutComponent = () => {
                 <Doughnut data={data} options={options} />
             </div>
 
-            <div className="flex gap-6 items-center justify-center">
+            <div className="flex gap-6 items-center justify-center max-[450px]:flex-col max-[450px]:gap-3">
                 <MiniBar color="bg-purple-500">Pending</MiniBar>
                 <MiniBar color="bg-cyan-500">In Progress</MiniBar>
                 <MiniBar color="bg-green-500">Completed</MiniBar>

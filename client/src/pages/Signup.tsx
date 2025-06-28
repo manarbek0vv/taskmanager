@@ -14,7 +14,7 @@ const Signup = () => {
 
     return (
         <div className={`w-full h-full flex gap-0`}>
-            <div className={`flex w-[60%] flex-col gap-15 items-start px-8 py-8 justify-between`}>
+            <div className={`flex w-[60%] flex-col gap-15 items-start px-8 py-8 justify-between max-[1250px]:w-full max-[1250px]:px-20 max-[600px]:px-8`}>
                 <h1 className={`text-lg font-['PoppinsSemiBold'] text-black`}>Task Manager</h1>
 
                 <div className="w-full h-full flex items-center">
@@ -41,7 +41,7 @@ const Signup = () => {
                 </div>
             </div>
 
-            <div className={`bg-blue-400 w-[40%] h-full`}></div>
+            <div className={`bg-blue-400 w-[40%] h-full max-[1250px]:hidden`}></div>
         </div>
     )
 }

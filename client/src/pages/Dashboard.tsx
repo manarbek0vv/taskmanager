@@ -1,5 +1,3 @@
-import { FaArrowRight } from "react-icons/fa"
-import { Link } from "react-router"
 import DoughnutComponent from "../UI/Doughnut"
 import BarComponent from "../UI/Bar"
 import DashboardHeader from "../components/DashboardHeader"
@@ -10,7 +8,7 @@ const Dashboard = () => {
         <div className={`[scrollbar-width:none] [-ms-overflow-style:none] [-webkit-scrollbar-width]:hidden flex flex-col gap-5 px-5 w-full h-full overflow-y-auto overflow-x-hidden py-8`}>
             <DashboardHeader />
 
-            <div className={`w-full grid grid-rows-1 grid-cols-2 gap-5`}>
+            <div className={`max-[850px]:grid-rows-2 max-[850px]:grid-cols-1 w-full grid grid-rows-1 grid-cols-2 gap-5 `}>
                 <DoughnutComponent />
         
                 <BarComponent />

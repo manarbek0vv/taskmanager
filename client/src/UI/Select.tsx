@@ -2,7 +2,6 @@ import { Dispatch, FC, useState } from "react";
 import { createPortal } from "react-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { Priority } from "../definitions/interfaces";
-import { CreateTaskDto } from "../dto/index.dto";
 
 interface SelectProps {
     options: Array<{ name: string, value: Priority }>;
@@ -14,12 +13,12 @@ const Select: FC<SelectProps> = ({ options, value, setData }) => {
     const [isHidden, setIsHidden] = useState(true);
 
     return (
-        <div onClick={() => setIsHidden(prev => !prev)} className={`cursor-pointer relative items-center flex justify-between max-w-70 w-screen rounded-[5px] px-2 py-1 bg-gray-50 border-1 border-zinc-200`}>
+        <div onClick={() => setIsHidden(prev => !prev)} className={`max-[600px]:w-full cursor-pointer relative items-center flex justify-between max-w-70 w-screen rounded-[5px] px-2 py-1 bg-gray-50 border-1 border-zinc-200`}>
             <span className={`select-none text-[15px] font-['PoppinsMedium']`}>{value.charAt(0).toUpperCase() + value.slice(1)}</span>
             <RiArrowDropDownLine className={`fill-black size-6`} />
 
             {!isHidden && createPortal(
-                <div onClick={(e) => {}} className={`p-8 flex justify-center items-center fixed inset-0 z-400 bg-transparent`}></div>,
+                <div className={`p-8 flex justify-center items-center fixed inset-0 z-400 bg-transparent`}></div>,
                 document.getElementById("modal") as HTMLDivElement
             )}
 

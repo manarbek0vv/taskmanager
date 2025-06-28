@@ -79,7 +79,7 @@ const ChangeTask = () => {
                         <p className={`text-black`}>{data.description}</p>
                     </div>
 
-                    <div className={`flex justify-between items-center pr-[20%] font-['PoppinsMedium'] text-[16px] gap-0`}>
+                    <div className={`flex justify-between items-center pr-[20%] font-['PoppinsMedium'] text-[16px] gap-0 max-[650px]:flex-col max-[650px]:gap-3 max-[650px]:items-start`}>
                         <div className={`flex flex-col gap-0`}>
                             <span className={`text-gray-500 block`}>Priority</span>
                             <span className={`text-black block`}>{data.priority.charAt(0).toUpperCase() + data.priority.slice(1).toLowerCase()}</span>

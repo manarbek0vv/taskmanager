@@ -20,7 +20,7 @@ const Notification: FC<ModalProps> = ({ children }) => {
     return createPortal(
         <CSSTransition onExited={() => auth.setError(null)}
             mountOnEnter unmountOnExit in={isVisible} nodeRef={nodeRef} timeout={300} classNames={"notification"}>
-            <div ref={nodeRef} className={`left-[50%] translate-x-[-50%] p-8 top-0 fixed z-[1000]`}>
+            <div ref={nodeRef} className={`left-[50%] max-[500px]:px-0 translate-x-[-50%] p-8 top-0 fixed z-[1000]`}>
                 <div className={`font-['PoppinsRegular'] text-sm flex gap-2 items-center bg-white px-4 py-2 shadow-sm shadow-gray-400 rounded-lg`}>
                     {children}
                 </div>
